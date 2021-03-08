@@ -30,7 +30,7 @@ with requests.Session() as s: #Login khong dung selenium
     site=s.get('https://vinabiz.org/account/login')
     bs_content=bs4.BeautifulSoup(site.content,features="html.parser")
     token=bs_content.find('input',{'name':'__RequestVerificationToken'})['value']
-    login_data={'email': 'luckyduc1005@yahoo.com','password': '123456',
+    login_data={'email': 'luckydxxxxxxxccc','password': 'xxxxxvcc',
                 'rememberMe': 'true','rememberMe': 'false',
                 '__RequestVerificationToken': token}
     s.post('https://vinabiz.org/account/login',data=login_data)
